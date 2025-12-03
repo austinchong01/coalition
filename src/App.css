@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+.container-parent {
+  width: 1600px;
+  height: 1195px;
+  background: #f6f7f8 0% 0% no-repeat padding-box;
+
+  padding: 18px;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 32px;
+}
+
+.headerCard {
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  border-radius: 70px;
+
+  height: 72px;
+
+  grid-column: 1 / -1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+  opacity: 1;
+
+  padding: 20px;
+}
+
+.subcard {
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.cardSide {
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+  opacity: 1;
+}
+
+.highlight {
+  background: var(--activestate_bg_1) 0% 0% no-repeat padding-box;
+  background: #01f0d0 0% 0% no-repeat padding-box;
+  border-radius: 41px;
+  opacity: 1;
+  padding: 12px 16px;
+}
+
+.scroll::-webkit-scrollbar {
+  border-radius: 3px;
+  width: 6px;
+  background: #E3E4E6 0% 0% no-repeat padding-box;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: var(--unnamed-color-072635) 0% 0% no-repeat padding-box;
+  border-radius: 3px;
+  width: 6px;
+}
