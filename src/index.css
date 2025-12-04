@@ -93,6 +93,15 @@
   line-height: 22px;
   transform: titlecase;
 }
+.manrope-medium14 {
+  font-family: var(--unnamed-font-family-manrope);
+  font-weight: medium;
+  font-size: 14px;
+  color: #072635;
+  letter-spacing: 0px;
+  line-height: 19px;
+  transform: titlecase;
+}
 .manrope-bold {
   font-family: var(--unnamed-font-family-manrope);
   font-weight: bold;
@@ -100,6 +109,14 @@
   color: #072635;
   letter-spacing: 0px;
   line-height: 30px;
+}
+.manrope-bold14 {
+  font-family: var(--unnamed-font-family-manrope);
+  font-weight: bold;
+  font-size: 14px;
+  color: #072635;
+  letter-spacing: 0px;
+  line-height: 19px;
 }
 .manrope-extraBold {
   font-family: var(--unnamed-font-family-manrope);
