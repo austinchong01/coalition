@@ -91,7 +91,6 @@
   color: #072635;
   letter-spacing: 0px;
   line-height: 22px;
-  transform: titlecase;
 }
 .manrope-medium14 {
   font-family: var(--unnamed-font-family-manrope);
@@ -100,7 +99,6 @@
   color: #072635;
   letter-spacing: 0px;
   line-height: 19px;
-  transform: titlecase;
 }
 .manrope-bold {
   font-family: var(--unnamed-font-family-manrope);
@@ -125,4 +123,12 @@
   color: #072635;
   letter-spacing: 0px;
   line-height: 41px;
+}
+.manrope-regular {
+  font-family: var(--unnamed-font-family-manrope);
+  font-weight: normal;
+  font-size: 14px;
+  color: #072635;
+  letter-spacing: 0px;
+  line-height: 19px;
 }

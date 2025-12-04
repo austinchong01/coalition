@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Patient from "./children/Patient"
 
 const Sidebar = ({ allPatients }) => {

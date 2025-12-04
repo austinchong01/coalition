@@ -1,7 +1,4 @@
-import { useState } from "react";
-
 const Profile = ({ patient }) => {
-  console.log(patient);
   const date = new Date(patient.date_of_birth);
   const formatted = date.toLocaleDateString("en-US", {
     year: "numeric",
@@ -9,9 +6,9 @@ const Profile = ({ patient }) => {
     day: "numeric",
   });
   return (
-    <div className="grid grid-rows-[7fr_3fr] gap-8">
-      <div className="card2 flex flex-col gap-10">
-        <div className="flex flex-col items-center gap-6">
+    <div className="flex flex-col gap-8">
+      <div className="card2 flex flex-col gap-8">
+        <div className="flex flex-col items-center gap-8">
           <img className="w-50 h-50" src="/images/pfp2.png" alt="pfp" />
           <div className="card-title-24pt">{patient.name}</div>
         </div>
@@ -85,7 +82,22 @@ const Profile = ({ patient }) => {
         </div>
       </div>
 
-      <div className="card">Lab Results</div>
+      <div className="card flex-1 flex flex-col">
+        <div className="card-title-24pt mb-4">Lab Results</div>
+        <div className="flex flex-col gap-[5px] overflow-y-auto scroll h-full">
+          {patient.lab_results.map((lab, index) => (
+            <div
+              key={index}
+              className={`manrope-regular flex justify-between items-center px-4 py-[11px] ${
+                lab === "CT Scans" ? "bg-[#F6F7F8]" : ""
+              }`}
+            >
+              {lab}
+              <img className="w-5" src="/images/download.svg" alt="download" />
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

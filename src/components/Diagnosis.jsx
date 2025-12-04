@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { getBloodPressure } from "../api/helper";
 import GetChart from "../api/helper.jsx";
 import Diag from "./children/Diag";
@@ -131,7 +130,7 @@ const Diagnosis = ({ patient }) => {
             <div className="col-span-4">Description</div>
             <div className="col-span-1">Status</div>
           </div>
-          <div className="flex flex-col gap-[10px] overflow-y-auto scroll h-[178px]">
+          <div className="flex flex-col gap-[10px] overflow-y-auto scroll h-[170px]">
             {list.map((diagnosis, index) => (
               <Diag
                 key={index}
